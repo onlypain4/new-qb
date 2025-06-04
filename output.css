@@ -265,6 +265,9 @@
   .z-20 {
     z-index: 20;
   }
+  .m-20 {
+    margin: calc(var(--spacing) * 20);
+  }
   .m-auto {
     margin: auto;
   }
@@ -331,11 +334,20 @@
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
+  .h-\[40px\] {
+    height: 40px;
+  }
+  .h-\[90px\] {
+    height: 90px;
+  }
   .h-\[100\%\] {
     height: 100%;
   }
   .h-full {
     height: 100%;
+  }
+  .h-lvh {
+    height: 100lvh;
   }
   .min-h-screen {
     min-height: 100vh;
@@ -346,11 +358,26 @@
   .w-64 {
     width: calc(var(--spacing) * 64);
   }
+  .w-80 {
+    width: calc(var(--spacing) * 80);
+  }
+  .w-\[10\%\] {
+    width: 10%;
+  }
   .w-\[20\%\] {
     width: 20%;
   }
+  .w-\[30px\] {
+    width: 30px;
+  }
+  .w-\[55px\] {
+    width: 55px;
+  }
   .w-\[90\%\] {
     width: 90%;
+  }
+  .w-fit {
+    width: fit-content;
   }
   .w-full {
     width: 100%;
@@ -709,6 +736,9 @@
   .bg-cover {
     background-size: cover;
   }
+  .bg-repeat {
+    background-repeat: repeat;
+  }
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
@@ -726,6 +756,9 @@
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
+  }
+  .p-20 {
+    padding: calc(var(--spacing) * 20);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
