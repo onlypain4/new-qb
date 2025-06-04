@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html class="scroll-smooth bg-gradient-to-bl from-indigo-100 via-sky-50 to-cyan-100">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./output.css" rel="stylesheet">
+  <title>Question App</title>
+  <style>
+    @keyframes slideDown {
+      0% { transform: translateY(-100px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes slideInLeft {
+      0% { transform: translateX(-100px); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes slideInRight {
+      0% { transform: translateX(100px); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes slideUp {
+      0% { transform: translateY(100px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }.slide-down { animation: slideDown 0.8s ease-out forwards; }
+.slide-left { animation: slideInLeft 0.8s ease-out forwards; }
+.slide-right { animation: slideInRight 0.8s ease-out forwards; }
+.slide-up { animation: slideUp 0.8s ease-out forwards; }
+
+  </style>
+</head>
+<body class="min-h-screen text-gray-800">
+  <!-- Header -->
+  <header class="text-center py-6 bg-gradient-to-r from-sky-200 to-indigo-300 shadow-lg rounded-b-3xl slide-down">
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">📘 পড়াশোনা অ্যাপ</h1>
+    <p class="text-sm sm:text-lg mt-1 text-gray-700">জ্ঞান অর্জনের স্মার্ট উপায়</p>
+  </header>  <main class="p-4 sm:p-6">
+    <!-- Section 1: Language & Math -->
+    <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-indigo-800 slide-down">ভাষা ও গণিত</h2>
+    <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-10">
+      <div class="bg-white rounded-2xl shadow-xl p-4 sm:p-6 text-center slide-left cursor-pointer">
+        <h3 class="text-lg sm:text-xl font-bold text-pink-600 mb-2">বাংলা</h3>
+        <img src="https://via.placeholder.com/80x80?text=BN" alt="Bangla" class="mx-auto">
+      </div>
+      <div class="bg-white rounded-2xl shadow-xl p-4 sm:p-6 text-center slide-right cursor-pointer">
+        <h3 class="text-lg sm:text-xl font-bold text-blue-600 mb-2">ইংরেজি</h3>
+        <img src="https://via.placeholder.com/80x80?text=EN" alt="English" class="mx-auto">
+      </div>
+      <div class="bg-white rounded-2xl shadow-xl p-4 sm:p-6 text-center slide-up cursor-pointer sm:col-span-2">
+        <h3 class="text-lg sm:text-xl font-bold text-green-600 mb-2">গণিত</h3>
+        <img src="https://via.placeholder.com/80x80?text=MATH" alt="Math" class="mx-auto">
+      </div>
+    </section><!-- Section 2: Science Subjects -->
+<h2 class="text-xl sm:text-2xl font-semibold mb-4 text-indigo-800 slide-down">বিজ্ঞান বিভাগ</h2>
+<section class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+  <div class="bg-white rounded-2xl shadow-xl p-4 sm:p-6 text-center slide-left cursor-pointer">
+    <h3 class="text-lg sm:text-xl font-bold text-purple-600 mb-2">কেমিস্ট্রি</h3>
+    <img src="https://via.placeholder.com/80x80?text=CHEM" alt="Chemistry" class="mx-auto">
+  </div>
+  <div class="bg-white rounded-2xl shadow-xl p-4 sm:p-6 text-center slide-up cursor-pointer">
+    <h3 class="text-lg sm:text-xl font-bold text-yellow-600 mb-2">বায়োলজি</h3>
+    <img src="https://via.placeholder.com/80x80?text=BIO" alt="Biology" class="mx-auto">
+  </div>
+  <div class="bg-white rounded-2xl shadow-xl p-4 sm:p-6 text-center slide-right cursor-pointer">
+    <h3 class="text-lg sm:text-xl font-bold text-red-600 mb-2">ফিজিক্স</h3>
+    <img src="https://via.placeholder.com/80x80?text=PHY" alt="Physics" class="mx-auto">
+  </div>
+</section>
+
+  </main>  <!-- Bottom Navigation -->  <footer class="fixed bottom-0 w-full bg-gradient-to-r from-slate-200 to-sky-200 flex justify-around py-2 sm:py-3 text-lg sm:text-xl text-gray-800 shadow-inner slide-up">
+    <button class="hover:text-blue-500"><i class="fa-solid fa-house"></i></button>
+    <button class="text-blue-600"><i class="fa-solid fa-book"></i></button>
+    <button class="hover:text-blue-500"><i class="fa-solid fa-user"></i></button>
+  </footer>
+</body>
+</html>
