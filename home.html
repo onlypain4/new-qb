@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./output.css" rel="stylesheet">
+  <title>Question Bank.com</title>
+  <style>
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeInUp 0.8s ease-out both; }
+    .card {
+      @apply rounded-2xl p-5 shadow-lg transition duration-300;
+    }
+    .light .card {
+      @apply bg-white text-gray-900 shadow-md;
+    }
+    .dark .card {
+      background-color: #1e293b; /* slate-800 */
+      color: #f1f5f9; /* slate-100 */
+      box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.08);
+    }
+    .dark .card h3 {
+      color: #cbd5e1;
+    }
+    .dark header, .dark footer {
+      background-image: linear-gradient(to right, #1f2937, #0f172a);
+    }
+    .light header, .light footer {
+      background-image: linear-gradient(to right, #62c8ff, #708cff);
+    }
+  </style>
+</head>
+<body id="appBody" class="mb-12 min-h-screen bg-gradient-to-b from-sky-100 via-orange-50 to-orange-100 text-gray-800 light transition-colors duration-300">  
+  
+  <header class="text-center py-5 px-3 rounded-b-3xl fade-up shadow-xl ">
+    <h1 class="text-white text-3xl font-bold">📚 Question Bank</h1>
+    <p class="text-white text-sm mt-1">এক অ্যাপে সব প্রশ্ন ও উত্তর</p>
+  </header> 
+  
+  <main class="px-4 py-6 space-y-10"><!-- সাধারণ -->
+    <section>
+        
+    <h2 class="text-xl font-semibold mb-3 dark:text-gray-400 fade-up">সাধারণ</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+
+    <a href="bangla.html"><!-- বাংলা -->
+          <div class="card fade-up bg-white shadow-xl border-2 border-red-100 shadow-red-200 pt-6 pb-4 pr-6 pl-4 rounded-2xl hover:scale-105 hover:shadow-2xl active:scale-95 transition-transform duration-200 ease-in-out ">
+            <h3 class="font-bold text-lg mb-2 text-center">বাংলা</h3>
+            <!-- <img src="" class="mx-auto"> -->
+          </div>
+    </a>
+
+    <a href="english.html"><!-- ইংরেজি -->
+          <div class="card fade-up bg-white shadow-xl border-2 border-blue-50 shadow-blue-200 pt-6 pb-4 pr-6 pl-4 rounded-2xl hover:scale-105 hover:shadow-2xl active:scale-95 transition-transform duration-200 ease-in-out">
+            <h3 class="font-bold text-lg mb-2 text-center">ইংরেজি</h3>
+            <!-- <img src="" class="mx-auto"> -->
+          </div>
+    </a>
+
+    </div>
+</section>
+
+<!-- বিজ্ঞান বিভাগ -->
+<section>
+  <h2 class="text-xl font-semibold mb-3 dark:text-gray-400 fade-up">বিজ্ঞান বিভাগ</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+
+    <a href="chemistry.html"><!-- কেমিস্ট্রি -->
+          <div class="card fade-up bg-white shadow-xl border-2 border-orange-100 shadow-orange-200 pt-6 pb-4 pr-6 pl-4 rounded-2xl hover:scale-105 hover:shadow-2xl active:scale-95 transition-transform duration-200 ease-in-out">
+          <h3 class="font-bold text-lg mb-2 text-center">কেমিস্ট্রি</h3>
+          <!-- <img src="" class="mx-auto"> -->
+        </div>
+    </a>
+
+   <a href="biology.html"><!-- বায়োলজি -->
+        <div class="card fade-up bg-white shadow-xl border-2 border-green-100 shadow-green-200 pt-6 pb-4 pr-6 pl-4 rounded-2xl hover:scale-105 hover:shadow-2xl active:scale-95 transition-transform duration-200 ease-in-out">
+          <h3 class="font-bold text-lg mb-2 text-center">বায়োলজি</h3>
+          <!-- <img src="" class="mx-auto"> -->
+        </div>
+   </a>
+
+    <a href="physics.html"><!-- ফিজিক্স -->
+          <div class="card fade-up bg-white shadow-xl border-2 border-blue-100 shadow-blue-300 pt-6 pb-4 pr-6 pl-4 rounded-2xl hover:scale-105 hover:shadow-2xl active:scale-95 transition-transform duration-200 ease-in-out">
+          <h3 class="font-bold text-lg mb-2 text-center">ফিজিক্স</h3>
+          <!-- <img src="" class="mx-auto"> -->
+        </div>
+    </a>
+
+  </div>
+</section>
+
+  </main>  <!-- Bottom nav -->  <footer class="fixed bottom-0 w-full flex justify-around py-3 text-xl text-gray-800 dark:text-slate-100 shadow-inner z-10">
+    <button><a href="index.html"><i class="fa-solid fa-house"></i></a></button>
+    <button><i class="fa-solid fa-book"></i></button>
+    <button onclick="toggleProfileMenu()"><i class="fa-solid fa-user"></i></button>
+  </footer>  <!-- Profile Menu -->  <div id="profileMenu" class="fixed top-0 right-0 w-64 h-full bg-white dark:bg-gray-900 text-gray-900 dark:text-white shadow-lg transform translate-x-full transition-transform duration-300 z-20">
+    <div class="p-4 border-b border-gray-300 dark:border-gray-700 text-lg font-semibold flex justify-between items-center">
+      প্রোফাইল <button onclick="toggleProfileMenu()" class="text-gray-500 hover:text-red-500">✖</button>
+    </div>
+    <div class="p-4">
+      <button onclick="toggleTheme()" class="w-full bg-blue-100 dark:bg-blue-700 text-blue-700 dark:text-white py-2 rounded hover:bg-blue-200 dark:hover:bg-blue-600 transition">🌙 থিম টগল করুন</button>
+    </div>
+  </div>  <script>
+    function toggleProfileMenu() {
+      const menu = document.getElementById('profileMenu');
+      menu.classList.toggle('translate-x-full');
+    }
+
+    function toggleTheme() {
+      const body = document.getElementById('appBody');
+      const isDark = body.classList.toggle('dark');
+      body.classList.toggle('light', !isDark);
+    }
+  </script>
+  
+</body>
+</html>
